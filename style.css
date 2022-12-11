@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=McLaren&family=Mukta:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=McLaren&family=Mukta:wght@200&family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=McLaren&family=Mukta:wght@200&family=Roboto+Slab:wght@500&display=swap');
+body {
+    background: brown;
+}
+h2, h1 {
+    font-family: 'Inter', sans-serif;
+}
+p, li {
+    font-family: 'Mukta', sans-serif;
+}
+li {
+    height: 50px;
+}
+.portfolio {
+    max-width: 100%;
+    display: flex;
+    padding: 1%;
+    justify-content: space-around;
+    background-color: antiquewhite;
+    text-align: center;
+}
+.portfolio img {
+    float: left;
+    width:  500px;
+    height: 500px;
+    object-fit: cover;
+}
+header {
+    text-align: right;
+    background-image: linear-gradient(blue, blueviolet);
+    height: 15em;
+    position: relative;
+}
+header a, h1 {
+    margin-right: 4%;
+    color: darkturquoise;
+}
+header a {
+    border-style: outset;
+    background: white;
+}
+
+footer {
+    height: 10px;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+.about {
+    text-align: center;
+    background: aqua;
+}
+#contacts p{
+    text-align: center;
+    color: white;
+}
+.window {
+    min-height: 10%;
+    max-width: 30%;
+    background: darkblue;
+    border: black solid 5px;
+    color: white;
+    position: absolute;
+    padding: 10%;
+    top: 30%;
+    left: 25%;
+    display: none;
+    animation: appearing 1s;
+}
+.image {
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+ul {
+    list-style-type: none;
+}
+@keyframes appearing {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.open-window {
+    background: lightseagreen;
+    border: 2px darkgreen solid;
+    font-family: 'Roboto Slab', serif;
+}
+.hamburger {
+    display: none;
+}
+#mobile {
+    right: 0;
+    top: 0;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background:url('https://ucarecdn.com/8b15eddc-6ec1-4124-b85b-fa0ab31736af/-/crop/578x545/666,0/-/preview/') no-repeat;
+    background-size: 100%;
+    border: none;
+}
+#mobileClose {
+    right: 0;
+    top: 0;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background:url('https://i.stack.imgur.com/b6ruG.png') no-repeat;
+    background-size: 100%;
+    border: none;
+    display: none;
+}
+#mobwin {
+    background: white;
+    position: absolute;
+    right: 0;
+    animation: openNav 500ms;
+    text-align: center;
+    min-width: 200px;
+    display: none;
+}
+
+@keyframes openNav {
+    0% {
+        right: -200px;
+    }
+    100% {
+        right: 0;
+    }
+}
+@media (max-width < 900px) {
+    #pc {
+        display: none;
+    }
+    #mobile {
+        display: block;
+    }
+}
+
